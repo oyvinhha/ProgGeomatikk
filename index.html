@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ContaGIS</title>
+    <link rel="icon" type="image/x-icon" href="/contaGIS_test.png">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/shapefile/dist/shapefile.umd.js"></script>
+</head>
+
+<body class="content">
+
+<div id="navbarTop" class="navbarTop">
+    <img src="contaGIS_test.png" width="141px" height="50px" ><!--style="padding-top: 15px;padding-left: 15px;"-->
+    <p style="display:inline-flex"></p>
+</div>
+
+<div id="chooseLayers" class="chooseLayers"></div>
+
+<div id="map">
+    
+</div>
+<div id="lolDiv"></div>
+<div id="changeNameOfThis"></div>
+<div id="togglePlacePolylineModeDiv"></div>
+<div id="togglePlacePolygonModeDiv"></div>
+
+
+<div id="dropZone" style="position:fixed; bottom:0px;right:0px;">
+  <p>Drag new files here</p>
+</div>
+
+<div id="settings">
+    <button id="settingsButton">Settings</button>
+</div>
+
+
+<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+<script type="module" src="index.js"></script>
+</body>
+
+</html> 
